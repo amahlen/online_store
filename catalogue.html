@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--My CSS Link-->
+    <link rel="stylesheet" type="text/css" href="catalogue.css">
+    <!--My jquery Link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+
+</head>
+
+<body id ="catalogue-backg">
+    <!--Navbar taken from Bootstrap-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <!--Browsing Section of Nav-->
+            <li class="nav-item">
+                <a class="nav-link" href="catalogue.html">Catalogue</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+ <h1 class="firstBigHeading">Glam shoes welcomes you!</h1>
+
+<!--Products -->
+<!--row1-->
+<div class="container">
+    <div class="product">
+        <div class="row">
+            <div class="col-md pb-4">
+                <img src="https://cdn.zando.co.za/p/327210-8170-012723-2-detail.jpg" class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle shadow p-3 mb-5 bg-white rounded img-thumbnail" alt="zando" />PLUM METALLIC HEELED COURT LIGHT GOLD
+                <p class="price">R699.99</p>
+                <button id="699.99" onclick="addCan1ToCart()" class="btn btn-dark shadow">Add to Cart</button>
+            </div>
+            <!--col-md pb-4 close-->
+            <div class="col-md pb-4">
+                <img src="https://cdn.zando.co.za/p/340801-4290-108043-2-detail.jpg" class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle shadow p-3 mb-5 bg-white rounded img-thumbnail" alt=" zando" /> MISS BLACK SHAYDA POINTY COURT HEELS BLACK/MULTI
+                <p class="price">R549.99</p>
+                <button id="549.99"  onclick="addCan2ToCart()" class="btn btn-dark shadow">Add to Cart</button>
+            </div>
+            <!--col-md pb-4 close-->
+        </div>
+        <!--row1 close-->
+        <!--row2-->
+        <div class="row">
+            <div class="col-md pb-4">
+                <img src="https://cdn.zando.co.za/p/340800-9377-008043-2-detail.jpg" class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle shadow p-3 mb-5 bg-white rounded img-thumbnail" alt="zando" />MISS BLACK MOILA POINTY COURT HEEL BLACK
+                <p class="price">R549.99</p>
+                <button id="549.99"  onclick="addCan3ToCart()" class="btn btn-dark shadow">Add to Cart</button>
+            </div>
+            <!--col-md pb-4 close-->
+            <div class="col-md pb-4">
+                <img src="https://cdn.zando.co.za/p/264286-9466-682462-2-detail.jpg" class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle shadow p-3 mb-5 bg-white rounded img-thumbnail" alt="
+            zando" /> UTOPIA MICROFIBRE POINTY COURT SOFT PINK
+                <p class="price">R289.99</p>
+                <button id="289.99"  onclick="addCan4ToCart()" class="btn btn-dark shadow">Add to Cart</button>
+
+            </div>
+            <!--col-md pb-4 close-->
+        </div>
+        <!--row2 close-->
+       <!--row3-->
+        <div class="row">
+            <div class="col-md pb-4">
+                <img src="https://cdn.zando.co.za/p/272209-3684-902272-2-detail.jpg" class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle shadow p-3 mb-5 bg-white rounded img-thumbnail" alt="zando" />UTOPIA VINYL POINTY COURTS BLUE
+                <p class="price">R239.99</p>
+                <button id="239.99"  onclick="addCan5ToCart()" class="btn btn-dark shadow">Add to Cart</button>
+            </div>
+            <!--col-md pb-4 close-->
+            <div class="col-md pb-4">
+                <img src="https://cdn.zando.co.za/p/321304-7698-403123-2-detail.jpg" class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle shadow p-3 mb-5 bg-white rounded img-thumbnail" alt="zando" />SISSY BOY COURT WITH PIN PUNCH DETAIL HEELS FLESH
+                <p class="price">R259.99</p>
+                <button id="259.99"  onclick="addCan6ToCart()" class="btn btn-dark shadow">Add to Cart</button>
+
+            </div>
+            <!--col-md pb-4 close-->
+        </div>
+        <!--row close-->
+    </div>
+    <!--div product close-->
+</div>
+</body>
+<script type="text/javascript" src ="catalogue.js"></script>
+</html>

@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Playball|Poiret+One|Righteous|Special+Elite');
+/* index/home-page animation (color-filter) followed by duration in seconds as well as iterations */
+
+#empty {
+  color: red;
+}
+
+#catalogue-backg {
+    background-color: navajowhite;
+    animation: colorchange 10s;
+    animation-iteration-count: 550;
+}
+
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@keyframes colorchange {
+    0% {
+        background: pink;
+    }
+
+    /*light salmon*/
+    25% {
+        background: #00fa9a;
+    }
+
+    /*green*/
+    50% {
+        background: #1589FF;
+    }
+
+    /*blue*/
+    75% {
+        background: #e9967a;
+    }
+
+    /*bright pink*/
+    100% {
+        background: navajowhite;
+    }
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        background: pink;
+    }
+
+    25% {
+        background: grey;
+    }
+
+    50% {
+        background: blue;
+    }
+
+    75% {
+        background: purple;
+    }
+
+    100% {
+        background: orange;
+    }
+}
+
+/* set background color per page */
+
+#cart-backg {
+    background-color:pink;
+
+}
+
+
+/*Home Page Styles*/
+#indexHeading {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: Righteous, cursive;
+    font-size: 130px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+}
+
+/*Navbar Styles */
+nav {
+  box-shadow: 0px 1px 10px #999;
+}
+a.navbar-brand {
+  font-family: Righteous, cursive;
+  font-size: 30px;
+  background-color: #F8F8F8;
+}
+.nav-item img {
+ margin-top: 10px;
+}
+.nav-item {
+  color: black;
+}
+#navbarNav .nav-link {
+   color:black;
+   font-size: 18px;
+   margin-top:14px;
+   margin-right: 10px;
+}
+
+/*Phone icon and number styling*/
+#call {
+  margin-left: 80px;
+  margin-right: 20px; 
+}
+
+#call p, #email p {
+  margin-top:20px;
+  float:right;
+  font-size: 19px;
+}
+
+#call img  {
+  margin-top : 20px;
+  margin-right: 10px;
+}
+/*Email icon and number styling*/
+#email {
+  margin-left: 10px;
+  margin-right: 80px;  
+}
+
+#email img {
+  margin-top : 15px;
+  margin-right: 5px;
+}
+
+#social-media {
+  margin-left: 120px;
+}
+
+img.icon {
+  margin-top: 0px;
+  padding-top:0px;
+  margin-bottom: 8px;
+}
+ .navlink .icon {
+  margin:0px;
+  padding:0px;
+ }
+
+/*Welcome Photos on Home Page*/
+#picBox {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-height: 300px;
+    padding-bottom: 30px;
+}
+
+.welcome-pics {
+    width: 28%;
+    max-height: 600px;
+    border: 2px solid black;
+    box-shadow: 2px 0px 2px 2px rgba(0,0,0,0.4);
+    float: left;
+}
+
+/*Cross-Page Shared Styles*/
+.firstBigHeading {
+    font-family: Poiret One, Abel, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 2px darkgrey;
+    padding-top:50px;
+    padding-bottom: 30px;
+}
+
+.bigHeading {
+    font-family: Poiret One, Abel, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 2px darkgrey;
+    
+}
+.sellInfo {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 70px;
+    padding-top: 30px;
+    color: #212529;
+}
+
+/*About Page Specific Styles*/
+#mission {
+    font-family: Poiret One, Abel, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 2px darkgrey;
+    padding-bottom: 30px;
+}
+
+.missionInfo {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  margin-top: 40px;
+}
+
+/*Testimony boxes styles*/
+.card-body {
+       color: lightgrey; 
+       font-size: 22px;
+       font-family: 'Lato', sans-serif;
+       line-height: 30px;
+       word-spacing: 1px;
+       background-image: url(images/leather.jpg);
+       background-size: contain;
+       border-radius: 5px 5px 5px 5px;
+       box-shadow: 2px 0px 2px 2px rgba(0,0,0,0.4);
+       text-shadow:    -1px -1px 0 #000,
+                        1px -1px 0 #000,
+                       -1px 1px 0 #000,
+                        1px 1px 0 #000;
+}
+
+#testimony-section {
+  display: flex;
+  justify-content:center;
+  margin-right: 60px;
+}
+
+.testimony-box {
+  float: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 60px;
+}
+
+.card img {
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top:30px;
+  width: 150px;
+  border: 1px white;
+}
+
+.card-title {
+  font-family: Poiret One, Abel, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow:   -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px 1px 0 #000,
+                  1px 1px 0 #000;
+}
+
+/*Products Page Specific Styles */
+.container p {
+  font-family: Poiret One, Abel, sans-serif;
+  font-size: 30px;
+  font-weight:bold;
+  margin:0px;
+}
+
+.product {
+  font-family: Poiret One, Abel, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.product img {
+  border: 1px grey;
+}
+
+/*Read More button styling*/
+.price {
+  padding-bottom: 20px;
+}
+a.moreButton {
+  text-decoration: none;
+  text-align: center;
+  font-family:  Poiret One, Abel, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: lightgrey;
+  padding: 5px;
+  margin: 3px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+a.moreButton:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+
+/*Table Styles*/
+#table {
+  padding-top:50px;
+  font-family:  Poiret One, Abel, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.row  {
+  font-size: 25px;
+}
+
+.btn {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*Radio Button css*/
+.radioBtn-box {
+  color:white; 
+  font-family: Righteous,cursive; 
+  font-size: 30px; 
+  text-shadow: 1px 1px black; 
+  text-align: center;
+  padding-bottom: 10px;
+  border-radius: 5px;
+ }
+
+/*Shipping-page image border & image color filter*/
+#deliver-form {
+  font-family:  Poiret One, Abel, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+#beats {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 80%;
+    height:600px;
+    border: 2px solid darkgrey;
+}
+
+#beats {
+    -webkit-animation: filter-animation 5s infinite;
+}
+
+@-webkit-keyframes filter-animation {
+    0% {
+        -webkit-filter: blur(0px) saturate(1);
+    }
+    50% {
+        -webkit-filter: blur(3px) saturate(1);
+    }
+    100% {
+        -webkit-filter: blur(0px) saturate(1);
+    }
+}
+
+#deliver-form {
+ margin-left: 200px;
+}
+
+.form-control {
+  font-size: 20px;
+}
+
+/*Footer Stlying*/
+#footer-section {
+  padding-top: 20px;
+  background-color: #1B1919;
+  color: white;
+  min-width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: -10px;
+  box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.4);
+}
+
+#footer-section p {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 55px;
+  font-family: calibri;
+  background-color: #1B1919;
+  float:left;
+  width: 70%;
+  box-shadow: 3px grey;
+}
+
+#icons {
+  padding-top: 15px;
+  margin-right:140px;
+  background-color: #1B1919;
+  float:right;
+  opacity: 0.7; /*Second image/s with filtering*/
+}
+
+.icon {
+  padding-right: 20px;
+  width: 60px;
+}
+
+
+/*Shopping Cart Styles*/
+#cartHeading {
+    font-family: Poiret One, Abel, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 2px darkgrey;
+    padding-top:50px;
+   
+}
+
+.payment {
+  margin-left: 450px;
+  padding-bottom: 30px;
+}
+
+.confirmBtn {
+  margin-top: 80px;
+  height: 80px;
+  font-size: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+} 
+
+/*Order Options*/
+.orderText {
+  display:none;
+  font-family: Poiret One, Abel, sans-serif;
+  font-size: 32px;
+  font-weight: bolder;
+  text-align: center;
+  color: #212529;
+}
+
+
+
+
+
+
+
+
